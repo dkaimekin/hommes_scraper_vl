@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import urllib.request
+import re
 
 ###################################################
 # This is deprecated code, just for information purposes
@@ -10,11 +11,9 @@ import urllib.request
 # with open("./catalog-page.html", "r") as f:
 #     webpage = f.read()
 
-
 # soup = BeautifulSoup(webpage, "html.parser")
 # print(len(soup.find_all("div", class_="jss25")))
 # print(soup.find("h1").text)
-
 
 # for tag in soup.find_all("div", class_="jss25"):
 #     print(tag.find("a")["href"])
@@ -41,11 +40,8 @@ def openCachedPage(page_name: str) -> str:
 def getCatalogPaginationLength(page: str) -> int:
     soup = BeautifulSoup(page, "html.parser")
     pagination_block = soup.find("div", class_="jss643")
-    max_pagination_number = (
-        pagination_block.find_all("button", class_="jss642")[-2]
-        .find("span", class_="jss641")
-        .text
-    )
+    max_pagination_number = (pagination_block.find_all(
+        "button", class_="jss642")[-2].find("span", class_="jss641").text)
     return int(max_pagination_number)
 
 
@@ -66,7 +62,7 @@ def extractLinksFromPage(page: str) -> list[str]:
 urls = {"women_clothes": "https://viled.kz/women/catalog/1320"}
 
 
-def extractLinksFromCatalog(url, catalog_name):
+def extractLinksFromCatalog(url: str, catalog_name: str) -> list[str]:
     extracted_links = []
     filename = catalog_name + ".html"
     cachePage(url, filename)
@@ -84,4 +80,59 @@ def extractLinksFromCatalog(url, catalog_name):
     return extracted_links
 
 
-print(len(extractLinksFromCatalog(urls["women_clothes"], "women_clothes")))
+def extractDataFromItemPage(url: str) -> list[dict]:
+    products_data = []
+    filename = "clothes_item.html"
+    cachePage(url, filename)
+    cachedPage = openCachedPage(filename)
+    for code in re.findall(r"}}],\"article\":\"(.*?)\"", cachedPage):
+        product_data = {}
+        product_data.update({"code": code})
+        product_data.update({"size": re.search(
+            r"_(.*?)_",
+            code,
+        ).group(1)})
+        product_data.update({
+            "brand":
+            re.search(r"brand\":{\"name\":\"(.*?)\"",
+                      cachedPage).group(1).upper()
+        })
+        product_data.update({
+            "name":
+            re.search(r"brand\":{.*\"nameRu\":\"(.*?)\"", cachedPage).group(1)
+        })
+        product_data.update({
+            "price":
+            re.search(r"\"id\":[0-9]+,\"price\":(.*?),", cachedPage).group(1)
+        })
+        product_data.update({
+            "real_price":
+            re.search(r"\"price\":[0-9]+,\"realPrice\":(.*?),",
+                      cachedPage).group(1)
+        })
+        product_data.update({
+            "composition_full":
+            re.sub(
+                r"([0-9]+(\.[0-9]+)?)", r" \1 ",
+                re.search(r"Composition.*{\"value\":(.*?)\",",
+                          cachedPage).group(1)).strip()
+        })
+        product_data.update({
+            "description":
+            re.search(r"descriptionRu\":\"(.*?)\"", cachedPage).group(1)
+        })
+        product_data.update({
+            "material_clothes":
+            re.search(r"Основной материал.*\"nameRu\":(.*?),.*9162",
+                      cachedPage).group(1)
+        })
+        product_data.update({
+            "images":
+            "///".join(re.findall(r"original\":\"(.*?)\"", cachedPage))
+        })
+        print(product_data)
+        products_data.append(product_data)
+    return products_data
+
+
+extractDataFromItemPage("https://viled.kz/women/item/274253")
