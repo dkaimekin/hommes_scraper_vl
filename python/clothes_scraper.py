@@ -49,7 +49,7 @@ def getCatalogPaginationLength(page: str) -> int:
     return int(max_pagination_number)
 
 
-def extractLinks(page: str) -> list[str]:
+def extractLinksFromPage(page: str) -> list[str]:
     soup = BeautifulSoup(page, "html.parser")
     extracted_links = [
         tag.find("a")["href"] for tag in soup.find_all("div", class_="jss25")
@@ -65,13 +65,23 @@ def extractLinks(page: str) -> list[str]:
 
 urls = {"women_clothes": "https://viled.kz/women/catalog/1320"}
 
-for catalog_name in urls:
+
+def extractLinksFromCatalog(url, catalog_name):
+    extracted_links = []
     filename = catalog_name + ".html"
-    cachePage(urls[catalog_name], filename)
+    cachePage(url, filename)
     cached_page = openCachedPage(filename)
     catalog_length = getCatalogPaginationLength(cached_page)
     for i in range(1, catalog_length + 1):
-        cachePage(urls[catalog_name] + "?page={0}".format(i), filename)
+        cachePage(url + "?page={0}".format(i), filename)
         print("Page {0} cached!".format(i))
         current_page = openCachedPage(filename)
-        print(extractLinks(current_page))
+        ###################################################
+        # Testing extraction correctness
+        # print(extractLinksFromPage(current_page))
+        ###################################################
+        extracted_links += extractLinksFromPage(current_page)
+    return extracted_links
+
+
+print(len(extractLinksFromCatalog(urls["women_clothes"], "women_clothes")))
