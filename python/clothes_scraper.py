@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import urllib.request
 import re
+import pandas as pd
 
 ###################################################
 # This is deprecated code, just for information purposes
@@ -59,7 +60,10 @@ def extractLinksFromPage(page: str) -> list[str]:
 # print(getCatalogPaginationLength(cached_page))
 ###################################################
 
-urls = {"women_clothes": "https://viled.kz/women/catalog/1320"}
+urls = {
+    "women_clothes": "https://viled.kz/women/catalog/1320",
+    "men_clothes": "https://viled.kz/men/catalog/1320"
+}
 
 
 def extractLinksFromCatalog(url: str, catalog_name: str) -> list[str]:
@@ -68,7 +72,7 @@ def extractLinksFromCatalog(url: str, catalog_name: str) -> list[str]:
     cachePage(url, filename)
     cached_page = openCachedPage(filename)
     catalog_length = getCatalogPaginationLength(cached_page)
-    for i in range(1, catalog_length + 1):
+    for i in range(1, 3):  #catalog_length + 1):
         cachePage(url + "?page={0}".format(i), filename)
         print("Page {0} cached!".format(i))
         current_page = openCachedPage(filename)
@@ -135,4 +139,19 @@ def extractDataFromItemPage(url: str) -> list[dict]:
     return products_data
 
 
-extractDataFromItemPage("https://viled.kz/women/item/274253")
+# extractDataFromItemPage("https://viled.kz/women/item/274253")
+
+
+def scrapeDataFromSingleCatalog(url, catalog_name):
+    links = extractLinksFromCatalog(url, catalog_name)
+    products_data = []
+    for link in links:
+        products_data += extractDataFromItemPage("https://viled.kz" + link)
+
+    dataframe = pd.DataFrame.from_dict(products_data)
+    dataframe.to_csv("{0}.csv".format(catalog_name), sep=',', encoding='utf-8')
+
+
+def scrapeDataFromMultipleCatalogs(url_dict):
+    for key in url_dict:
+        scrapeDataFromSingleCatalog(url_dict[key], key)
