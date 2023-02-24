@@ -1,0 +1,21 @@
+{
+  "size": "\"nameRu\":\"Размер\".*?\"nameRu\":\"(.*?)\",.*?}},{\"",
+  "color": "\"nameRu\":\"Цвет\".*?\"nameRu\":\"(.*?)\",.*?}},{\"",
+  "country_of_origin": "\"nameRu\":\"Страна производства\".*?\"nameRu\":\"(.*?)\",.*?}},{\"",
+  "material_clothes": "\"nameRu\":\"Основной материал\".*?\"nameRu\":\"(.*?)\",.*?}},{\"",
+  "clothes_type": "\"nameRu\":\"Вид.?\".*?\"nameRu\":\"(.*?)\",.*?}},{\"",
+  "full_composition": "\"nameRu\":\"Состав\".*?\"nameRu\":\"(.*?)\",.*?}}",
+
+  "extract_props": "\"props.*?\"address\":",
+  "split_attribute_data": "{\"id.*?consignment\":null}",
+  "extract_sku": "\"article\":\".*?\"",
+  "extract_price": "\"price\":(.*?),",
+  "extract_real_price": "\"realPrice\":(.*?),",
+  "extract_size": "\"nameEn\":\"size\".*?\"nameRu\":\"(.*?)\"",
+  "extract_color": "\"nameEn\":\"Color\".*?\"nameRu\":\"(.*?)\"",
+  "extract_country_of_origin": "\"nameEn\":\"Country of origin\".*?\"nameRu\":\"(.*?)\"",
+  "extract_basic_material": "\"nameEn\":\"Basic material\".*?\"nameRu\":\"(.*?)\"",
+  "extract_type": "\"nameEn\":\"Type\".*?\"nameRu\":\"(.*?)\"",
+  "extract_composition": "\"nameEn\":\"Composition\".*?\"nameRu\":\"(.*?)\"",
+  "extract_description": "\"descriptionRu\":\"(.*?)\""
+}

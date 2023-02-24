@@ -1,0 +1,423 @@
+{
+  "props": {
+    "pageProps": {
+      "attributesData": [
+        {
+          "id": 533168,
+          "price": 1725900,
+          "realPrice": 1725900,
+          "currency": "₸",
+          "enableDiscount": false,
+          "discountName": null,
+          "images": [
+            {
+              "id": 397745,
+              "small": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/small/2742532Jyf3.webp",
+              "medium": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/medium/2742532Jyf3.webp",
+              "large": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/large/2742532Jyf3.webp",
+              "original": "https://storage.yandexcloud.net/cdn-prod.viled.kz/original/2742532Jyf3.jpg",
+              "isFitView": false,
+              "sort": 0
+            },
+            {
+              "id": 397747,
+              "small": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/small/274253SZJd9.webp",
+              "medium": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/medium/274253SZJd9.webp",
+              "large": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/large/274253SZJd9.webp",
+              "original": "https://storage.yandexcloud.net/cdn-prod.viled.kz/original/274253SZJd9.jpg",
+              "isFitView": false,
+              "sort": 1
+            },
+            {
+              "id": 397749,
+              "small": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/small/274253eUovT.webp",
+              "medium": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/medium/274253eUovT.webp",
+              "large": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/large/274253eUovT.webp",
+              "original": "https://storage.yandexcloud.net/cdn-prod.viled.kz/original/274253eUovT.jpg",
+              "isFitView": false,
+              "sort": 2
+            },
+            {
+              "id": 397748,
+              "small": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/small/274253E65KY.webp",
+              "medium": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/medium/274253E65KY.webp",
+              "large": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/large/274253E65KY.webp",
+              "original": "https://storage.yandexcloud.net/cdn-prod.viled.kz/original/274253E65KY.jpg",
+              "isFitView": false,
+              "sort": 3
+            },
+            {
+              "id": 397746,
+              "small": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/small/274253LJMWg.webp",
+              "medium": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/medium/274253LJMWg.webp",
+              "large": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/large/274253LJMWg.webp",
+              "original": "https://storage.yandexcloud.net/cdn-prod.viled.kz/original/274253LJMWg.jpg",
+              "isFitView": false,
+              "sort": 4
+            }
+          ],
+          "attributes": [
+            {
+              "attribute": {
+                "id": 9066,
+                "type": 2,
+                "status": 1,
+                "nameRu": "Размер",
+                "nameEn": "size",
+                "nameKz": "Өлшемі",
+                "nameCn": "尺寸"
+              },
+              "attributeValue": {
+                "value": "XL",
+                "id": 192320,
+                "nameRu": "XL",
+                "nameEn": "XL",
+                "nameKz": "XL",
+                "nameCn": "XL"
+              }
+            },
+            {
+              "attribute": {
+                "id": 9073,
+                "type": 2,
+                "status": 1,
+                "nameRu": "Цвет",
+                "nameEn": "Color",
+                "nameKz": "Түсі",
+                "nameCn": "颜色"
+              },
+              "attributeValue": {
+                "value": "Multi",
+                "id": 192321,
+                "nameRu": "Многоцветный",
+                "nameEn": "Multi",
+                "nameKz": "Көптүсті",
+                "nameCn": "多色的"
+              }
+            },
+            {
+              "attribute": {
+                "id": 9178,
+                "type": 2,
+                "status": 1,
+                "nameRu": "Страна производства",
+                "nameEn": "Country of origin",
+                "nameKz": "Шығарылған елі",
+                "nameCn": "生产国"
+              },
+              "attributeValue": {
+                "value": "Италия",
+                "id": 200593,
+                "nameRu": "Италия",
+                "nameEn": "Italy",
+                "nameKz": "Италия",
+                "nameCn": "意大利"
+              }
+            },
+            {
+              "attribute": {
+                "id": 9102,
+                "type": 2,
+                "status": 1,
+                "nameRu": "Основной материал",
+                "nameEn": "Basic material",
+                "nameKz": "Негізгі материал",
+                "nameCn": "基体材料"
+              },
+              "attributeValue": {
+                "value": "Viscose",
+                "id": 200622,
+                "nameRu": "Вискоза",
+                "nameEn": "Viscose",
+                "nameKz": "Вискоза",
+                "nameCn": "粘胶"
+              }
+            },
+            {
+              "attribute": {
+                "id": 9162,
+                "type": 2,
+                "status": 1,
+                "nameRu": "Вид ",
+                "nameEn": "Type",
+                "nameKz": "Түрі",
+                "nameCn": "类型"
+              },
+              "attributeValue": {
+                "value": "Cocktail dresses",
+                "id": 206717,
+                "nameRu": "Коктейльные платья",
+                "nameEn": "Cocktail dresses",
+                "nameKz": "Сәнді көйлектер",
+                "nameCn": "鸡尾酒会礼服"
+              }
+            },
+            {
+              "attribute": {
+                "id": 9177,
+                "type": 2,
+                "status": 1,
+                "nameRu": "Состав",
+                "nameEn": "Composition",
+                "nameKz": "Құрамы",
+                "nameCn": "成分"
+              },
+              "attributeValue": {
+                "value": "Вискоза81% Металлизированное волокно19%",
+                "id": 224828,
+                "nameRu": "Вискоза81% Металлизированное волокно19%",
+                "nameEn": "Вискоза81% Металлизированное волокно19%",
+                "nameKz": "Вискоза81% Металлизированное волокно19%",
+                "nameCn": "Вискоза81% Металлизированное волокно19%"
+              }
+            }
+          ],
+          "article": "2B3KC43R7RJ.M12_XL_231",
+          "hasGift": false,
+          "collectionTypes": [],
+          "consignment": null
+        },
+        {
+          "id": 533167,
+          "price": 1725900,
+          "realPrice": 1725900,
+          "currency": "₸",
+          "enableDiscount": false,
+          "discountName": null,
+          "images": [
+            {
+              "id": 397745,
+              "small": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/small/2742532Jyf3.webp",
+              "medium": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/medium/2742532Jyf3.webp",
+              "large": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/large/2742532Jyf3.webp",
+              "original": "https://storage.yandexcloud.net/cdn-prod.viled.kz/original/2742532Jyf3.jpg",
+              "isFitView": false,
+              "sort": 0
+            },
+            {
+              "id": 397747,
+              "small": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/small/274253SZJd9.webp",
+              "medium": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/medium/274253SZJd9.webp",
+              "large": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/large/274253SZJd9.webp",
+              "original": "https://storage.yandexcloud.net/cdn-prod.viled.kz/original/274253SZJd9.jpg",
+              "isFitView": false,
+              "sort": 1
+            },
+            {
+              "id": 397749,
+              "small": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/small/274253eUovT.webp",
+              "medium": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/medium/274253eUovT.webp",
+              "large": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/large/274253eUovT.webp",
+              "original": "https://storage.yandexcloud.net/cdn-prod.viled.kz/original/274253eUovT.jpg",
+              "isFitView": false,
+              "sort": 2
+            },
+            {
+              "id": 397748,
+              "small": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/small/274253E65KY.webp",
+              "medium": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/medium/274253E65KY.webp",
+              "large": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/large/274253E65KY.webp",
+              "original": "https://storage.yandexcloud.net/cdn-prod.viled.kz/original/274253E65KY.jpg",
+              "isFitView": false,
+              "sort": 3
+            },
+            {
+              "id": 397746,
+              "small": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/small/274253LJMWg.webp",
+              "medium": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/medium/274253LJMWg.webp",
+              "large": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/large/274253LJMWg.webp",
+              "original": "https://storage.yandexcloud.net/cdn-prod.viled.kz/original/274253LJMWg.jpg",
+              "isFitView": false,
+              "sort": 4
+            }
+          ],
+          "attributes": [
+            {
+              "attribute": {
+                "id": 9066,
+                "type": 2,
+                "status": 1,
+                "nameRu": "Размер",
+                "nameEn": "size",
+                "nameKz": "Өлшемі",
+                "nameCn": "尺寸"
+              },
+              "attributeValue": {
+                "value": "M",
+                "id": 192157,
+                "nameRu": "M",
+                "nameEn": "M",
+                "nameKz": "M",
+                "nameCn": "M"
+              }
+            },
+            {
+              "attribute": {
+                "id": 9073,
+                "type": 2,
+                "status": 1,
+                "nameRu": "Цвет",
+                "nameEn": "Color",
+                "nameKz": "Түсі",
+                "nameCn": "颜色"
+              },
+              "attributeValue": {
+                "value": "Multi",
+                "id": 192321,
+                "nameRu": "Многоцветный",
+                "nameEn": "Multi",
+                "nameKz": "Көптүсті",
+                "nameCn": "多色的"
+              }
+            },
+            {
+              "attribute": {
+                "id": 9178,
+                "type": 2,
+                "status": 1,
+                "nameRu": "Страна производства",
+                "nameEn": "Country of origin",
+                "nameKz": "Шығарылған елі",
+                "nameCn": "生产国"
+              },
+              "attributeValue": {
+                "value": "Италия",
+                "id": 200593,
+                "nameRu": "Италия",
+                "nameEn": "Italy",
+                "nameKz": "Италия",
+                "nameCn": "意大利"
+              }
+            },
+            {
+              "attribute": {
+                "id": 9102,
+                "type": 2,
+                "status": 1,
+                "nameRu": "Основной материал",
+                "nameEn": "Basic material",
+                "nameKz": "Негізгі материал",
+                "nameCn": "基体材料"
+              },
+              "attributeValue": {
+                "value": "Viscose",
+                "id": 200622,
+                "nameRu": "Вискоза",
+                "nameEn": "Viscose",
+                "nameKz": "Вискоза",
+                "nameCn": "粘胶"
+              }
+            },
+            {
+              "attribute": {
+                "id": 9162,
+                "type": 2,
+                "status": 1,
+                "nameRu": "Вид ",
+                "nameEn": "Type",
+                "nameKz": "Түрі",
+                "nameCn": "类型"
+              },
+              "attributeValue": {
+                "value": "Cocktail dresses",
+                "id": 206717,
+                "nameRu": "Коктейльные платья",
+                "nameEn": "Cocktail dresses",
+                "nameKz": "Сәнді көйлектер",
+                "nameCn": "鸡尾酒会礼服"
+              }
+            },
+            {
+              "attribute": {
+                "id": 9177,
+                "type": 2,
+                "status": 1,
+                "nameRu": "Состав",
+                "nameEn": "Composition",
+                "nameKz": "Құрамы",
+                "nameCn": "成分"
+              },
+              "attributeValue": {
+                "value": "Вискоза81% Металлизированное волокно19%",
+                "id": 224828,
+                "nameRu": "Вискоза81% Металлизированное волокно19%",
+                "nameEn": "Вискоза81% Металлизированное волокно19%",
+                "nameKz": "Вискоза81% Металлизированное волокно19%",
+                "nameCn": "Вискоза81% Металлизированное волокно19%"
+              }
+            }
+          ],
+          "article": "2B3KC43R7RJ.M12_M_231",
+          "hasGift": false,
+          "collectionTypes": [],
+          "consignment": null
+        }
+      ],
+      "gender": "women",
+      "item": {
+        "id": 274253,
+        "catalog": { "id": 1320, "nameEn": "Apparel", "nameRu": "Одежда", "nameKz": "Киім", "nameCn": "服装" },
+        "group": { "id": 25194, "nameEn": "Dresses", "nameRu": "Платья", "nameKz": "Көйлектер", "nameCn": "连衣裙" },
+        "brand": { "name": "Valentino", "id": "3140" },
+        "nameRu": "Платье мини с боа",
+        "nameEn": "Mini dress with boa",
+        "nameKz": "Мини көйлек",
+        "nameCn": "围巾装饰迷你连衣裙",
+        "minPrice": 1725900,
+        "maxPrice": 1725900,
+        "descriptionKz": "",
+        "descriptionEn": "",
+        "descriptionRu": "Платье мини свободного кроя из смесовой вискозы с люрексом. Вырез-лодочка, длинные рукава, принт в контрастную полоску и в виде литеры V по всему изделию, декоративная боа у основания с разрезами по бокам, закругленный подол. \r\n\r\nХарактеристики товара для размера M: обхват груди - 112 см, обхват талии - 114 см, длина рукава от плечевого шва - 47 см, длина изделия по спинке - 70 см.",
+        "descriptionCn": "",
+        "type": "APPAREL",
+        "images": [
+          {
+            "id": 397745,
+            "small": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/small/2742532Jyf3.webp",
+            "medium": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/medium/2742532Jyf3.webp",
+            "large": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/large/2742532Jyf3.webp",
+            "original": "https://storage.yandexcloud.net/cdn-prod.viled.kz/original/2742532Jyf3.jpg",
+            "isFitView": false,
+            "sort": 0
+          },
+          {
+            "id": 397747,
+            "small": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/small/274253SZJd9.webp",
+            "medium": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/medium/274253SZJd9.webp",
+            "large": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/large/274253SZJd9.webp",
+            "original": "https://storage.yandexcloud.net/cdn-prod.viled.kz/original/274253SZJd9.jpg",
+            "isFitView": false,
+            "sort": 1
+          },
+          {
+            "id": 397749,
+            "small": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/small/274253eUovT.webp",
+            "medium": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/medium/274253eUovT.webp",
+            "large": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/large/274253eUovT.webp",
+            "original": "https://storage.yandexcloud.net/cdn-prod.viled.kz/original/274253eUovT.jpg",
+            "isFitView": false,
+            "sort": 2
+          },
+          {
+            "id": 397748,
+            "small": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/small/274253E65KY.webp",
+            "medium": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/medium/274253E65KY.webp",
+            "large": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/large/274253E65KY.webp",
+            "original": "https://storage.yandexcloud.net/cdn-prod.viled.kz/original/274253E65KY.jpg",
+            "isFitView": false,
+            "sort": 3
+          },
+          {
+            "id": 397746,
+            "small": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/small/274253LJMWg.webp",
+            "medium": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/medium/274253LJMWg.webp",
+            "large": "https://storage.yandexcloud.net/cdn-prod.viled.kz/converted/large/274253LJMWg.webp",
+            "original": "https://storage.yandexcloud.net/cdn-prod.viled.kz/original/274253LJMWg.jpg",
+            "isFitView": false,
+            "sort": 4
+          }
+        ]
+      }
+    }
+  }
+}
